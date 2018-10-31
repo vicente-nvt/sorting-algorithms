@@ -1,0 +1,14 @@
+{
+  "name": "sorting-algorithms",
+  "version": "1.0.0",
+  "description": "sorting algorithms",
+  "main": "quickSort-test.js",
+  "scripts": {
+    "test": "jasmine ./tests/*.js"
+  },
+  "author": "José Vicente Neto",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.3.0"
+  }
+}
