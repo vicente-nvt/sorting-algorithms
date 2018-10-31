@@ -1,4 +1,4 @@
-var swap = require("../algorithms/swap");
+var swap = require("../helpers/swap");
 
 function sort(givenArray){
 

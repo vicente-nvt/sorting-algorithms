@@ -5,7 +5,7 @@ describe("Tests for Bubble Sort", () => {
 
     var arrayGenerator = new ArrayGenerator();
 
-    it ("should sort an integer array", () => {
+    it ("should sort a small integer array", () => {
         var givenArray = arrayGenerator.getSmallIntegerArray();
         var sortedExpectedArray = arrayGenerator.getSmallSortedIntegerArray();
 
