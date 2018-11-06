@@ -1,24 +1,24 @@
-var bubbleSort = require("../algorithms/bubbleSort");
+var mergeSort = require("../algorithms/mergeSort");
 var ArrayGenerator = require("../helpers/arrayGenerator");
 
-describe("Tests for Bubble Sort", () => {
+describe("Tests for Merge Sort", () => {
 
     var arrayGenerator = new ArrayGenerator();
 
-    it ("should sort a small integer array with Bubble Sort", () => {
+    it ("should sort a small integer array with Merge Sort", () => {
         var givenArray = arrayGenerator.getSmallIntegerArray();
         var sortedExpectedArray = arrayGenerator.getSmallSortedIntegerArray();
 
-        var sortedArray = bubbleSort(givenArray);
+        var sortedArray = mergeSort(givenArray);
 
         expect(sortedExpectedArray).toEqual(sortedArray);
     });
 
-    it ("should sort a big integer array with Bubble Sort", () => {
+    it ("should sort a big integer array with Merge Sort", () => {
         var givenArray = arrayGenerator.getBigIntegerArray();
         var sortedExpectedArray = arrayGenerator.getBigSortedIntegerArray();
             
-        var sortedArray = bubbleSort(givenArray);
+        var sortedArray = mergeSort(givenArray);
 
         expect(sortedExpectedArray).toEqual(sortedArray);
     });

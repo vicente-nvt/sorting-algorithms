@@ -5,7 +5,7 @@ describe("Tests for Bubble Sort", () => {
 
     var arrayGenerator = new ArrayGenerator();
 
-    it ("should sort a small integer array with selectionSort", () => {
+    it ("should sort a small integer array with Selection Sort", () => {
         var givenArray = arrayGenerator.getSmallIntegerArray();
         var sortedExpectedArray = arrayGenerator.getSmallSortedIntegerArray();
 
@@ -14,7 +14,7 @@ describe("Tests for Bubble Sort", () => {
         expect(sortedExpectedArray).toEqual(sortedArray);
     });
 
-    it ("should sort a big integer array with selectionSort", () => {
+    it ("should sort a big integer array with Selection Sort", () => {
         var givenArray = arrayGenerator.getBigIntegerArray();
         var sortedExpectedArray = arrayGenerator.getBigSortedIntegerArray();
             
